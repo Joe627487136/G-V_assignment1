@@ -6,6 +6,8 @@
     ./one swp/core.swp (To generate curve)
     ./one swp/weird.swp (To generate the cylinder stadium-like thing)
     ./one swp/weird.swp foo (To generate Obj)
+    ./one swp/Tower?.swp foo (Artifact 1)
+    ./one swp/DNA.swp foo (Artifact2)
 ```
 
 ## Answers for the Questions ##
