@@ -105,6 +105,11 @@ Curve evalBezier( const vector< Vector3f >& P, unsigned steps )
 		}
 			
     }
+
+	if (approx(R[0].T, R[R.size()-1].T) && approx(R[0].V, R[R.size()-1].V) && !approx(R[0].N,R[R.size()-1].N)){
+		cerr << "\t>>>  mismatch"<< endl;
+	}
+
     cerr << "\t>>> Steps (type steps): " << steps << endl;
 
     return R;

@@ -98,7 +98,7 @@ void drawSurface(const Surface &surface, bool shaded)
 {
     // Save current state of OpenGL
     glPushAttrib(GL_ALL_ATTRIB_BITS);
-
+	cerr << "\t>>> Surf: " << surface.VN[surface.VF[0][0]] << endl;
     if (shaded)
     {
         // This will use the current material color and light

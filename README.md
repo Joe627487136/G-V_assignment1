@@ -1,4 +1,4 @@
-# G-V_assignment1
+# G-V_assignment0
 ## How to Use ##
 - After setup the project, make sure you are running the Visual Studio 2010 since the project is compiled with such an IDE. 
 - For running the project, ```Shift + Right Click``` and choose ```Open command window here```, then in the terminal, please key in:
