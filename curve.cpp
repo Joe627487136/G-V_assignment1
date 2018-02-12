@@ -105,16 +105,6 @@ Curve evalBezier( const vector< Vector3f >& P, unsigned steps )
 		}
 			
     }
-	if (approx(R[0].V, R[R.size()-1].V) &&
-		approx(R[0].T, R[R.size()-1].T) &&
-		!approx(R[0].N, R[R.size()-1].N)){
-			float angle = acos(Vector3f::dot(R[0].N, R[R.size()-1].N));
-			for (unsigned i = 0; i < R.size(); i++){
-				Matrix3f rotM = Matrix3f::rotation(R[i].T, angle * (.5-float(i)/R.size()));
-				R[i].N = rotM*R[i].N;
-				R[i].B = rotM*R[i].B;
-			}
-	}
     cerr << "\t>>> Steps (type steps): " << steps << endl;
 
     return R;
